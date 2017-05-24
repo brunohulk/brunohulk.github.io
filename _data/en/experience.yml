@@ -1,0 +1,32 @@
+# Jobs
+- company: Arizona - Making Marketing Flow
+  position: Senior PHP Developer
+  duration: May, 2017 &mdash; Present
+  summmary: 
+
+- company: R7 - RecordTV
+  position: Software Developer
+  duration: Dec, 2015 &mdash; Apr, 2017
+  summary: "Development and maintenance of blogs and applications in the R7 portal and the Rede Record TV channel applications, among the technologies used are: PHP, Ruby, Sinatra, Rails, WordPress, NodeJs, MySql, Mongo, Redis e etc"
+
+- company: Easy Taxi
+  position: PHP Developer
+  duration: Nov, 2014 &mdash; Dec, 2015 
+  summary: "Development and maintenance of internal and external applications like Backoffice system, API, WebApp and Uploader documents. I also worked with special partners and promotions like Multiplus, Ambev, TripAdvisor and Outlook.
+ Technologies: PHP, Node.js, frameworks (Symfony, Silex, Phalcon and Express), databases (Mysql, MongoDB, Redis and Memcache), Amazon Web Services, TDD (PHPUnit), BDD(Behat, Jasmine), Scrum, Kanban e versionamento GIT"
+
+- company: BRConnection
+  position: PHP Developer
+  duration: Set, 2008 &mdash; Nov, 2014
+  summary: "Developer and maintainer of Webmail Emexis-webmail an opensource solution by Brconnection. I have developed the front-end of the Omne 2.7, PDF reports using FPDF class and PChart and some routines in the backend like informations' server (Dashboard). Development of a Groupware solution (Drive, calendar, contacts and E-mail through Webdav/Caldav protocol.
+  Technologies: PHP 5, Bootstrap, PERL, Javascript, JSON, Jquery, Ajax, PostgreSQL, CSS, HTML e SVN."
+
+- company: Testmat
+  position: Internship in programming and IT
+  duration: Apr, 2007 &mdash; Set, 2008
+  summary: Maintenance of all the company's websites, e-learning management (Moodle) and restructuring, administration of the company’s Network and creation of a new portal using Plone/Zope and Python language 
+
+- company: Microlins
+  position: Computer teacher
+  duration: Mar, 2006 &mdash; Apr, 2007
+  summary: Instructor of Microsoft Office 2000 suite, Windows 2000, internet use e typing  

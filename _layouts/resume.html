@@ -6,7 +6,6 @@
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
-
       <header class="page-header">
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
@@ -25,14 +24,14 @@
         <div class="title-bar no-print">
 
           <!-- Your title is also defined in the _config.yml file -->
-          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
+          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title[page.language] }}</h2>
 
           <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
           {% include icon-links.html %}
         </div>
 
         <div class="executive-summary no-print" itemprop="description">
-          {{ site.resume_header_intro }}
+          {{site.description_profile[page.language]}}
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -43,16 +42,17 @@
         {% endif %}
 
       </header>
-
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Experience</h2>
+          <h2>{{site.experience[page.language]}}</h2>
         </header>
-
-        {% for job in site.data.experience %}
+	{% if page.language == 'en' %}
+	   {% assign jobs = site.data.en.experience %} 	
+	{% endif %}
+        {% for job in jobs %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
           <h4 class="resume-item-details" itemprop="description"><span style="display: block; float:left;">{{ job.position }}</span><span style="display: block; float:right;">{{ job.duration }}</span></h4><br/>
@@ -69,7 +69,7 @@
       <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Education</h2>
+          <h2>{{site.education[page.language]}}</h2>
         </header>
 
         {% for education in site.data.education %}
@@ -89,7 +89,7 @@
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2>{{site.projects[page.language]}}</h2>
         </header>
 
         {% for project in site.data.projects %}
@@ -109,7 +109,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Skills</h2>
+          <h2>{{site.skills[page.language]}}</h2>
         </header>
         {% for skill in site.data.skills %}
         <div class="resume-item">
@@ -127,7 +127,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Recognition</h2>
+          <h2>{{site.certifications[page.language]}}</h2>
         </header>
 
         {% for recognition in site.data.recognitions %}
