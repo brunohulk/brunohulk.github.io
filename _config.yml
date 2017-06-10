@@ -12,6 +12,13 @@ description:
   en: Bruno Borges, PHP Developer, ZCPE e CSM
   pt: Bruno Borges, Desenvolvedor PHP, ZCPE e CSM
 
+download_cv:
+  en: Resume in PDF
+  pt: Currículo em PDF
+link_cv:
+  en: https://drive.google.com/file/d/0B1OxzzhipoDgWHdJM0dwdmo3cGs/view
+  pt: https://drive.google.com/file/d/0B1OxzzhipoDgbGZ0SFN3TXlGYU0/view
+
 resume_title:
   en: Software Developer
   pt: Desenvolvedor de Software
@@ -27,6 +34,12 @@ skills:
 certifications:
   en: Certifications
   pt: Certificações
+projects:
+  en: Projects
+  pt: Projetos
+articles:
+  en: My articles
+  pt: Meus artigos
 
 permalink: pretty
 

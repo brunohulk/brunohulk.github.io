@@ -10,7 +10,7 @@
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
-        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+        <img src="/images/bruno.jpg" alt="my photo" class="avatar no-print" itemprop="image">
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
@@ -32,15 +32,10 @@
 
         <div class="executive-summary no-print" itemprop="description">
           {{site.description_profile[page.language]}}
-        </div>
-
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-        {% else %}
-        {% endif %}
-
+	</div>
+        <a href="{{site.link_cv[page.language]}}" class="contact-button no-print" itemprop="email">
+  	  {{ site.download_cv[page.language] }}
+	</a>
       </header>
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
@@ -50,7 +45,11 @@
           <h2>{{site.experience[page.language]}}</h2>
         </header>
 	{% if page.language == 'en' %}
-	   {% assign jobs = site.data.en.experience %} 	
+	   {% assign jobs = site.data.en.experience %}
+           {% assign educations = site.data.en.education %}
+           {% assign projects = site.data.en.projects %}
+  	   {% assign articles = site.data.en.articles %}
+	   {% assign links = site.data.en.links %}
 	{% endif %}
         {% for job in jobs %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
@@ -72,12 +71,13 @@
           <h2>{{site.education[page.language]}}</h2>
         </header>
 
-        {% for education in site.data.education %}
+        {% for education in educations %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
           <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
           <h4 class="resume-item-details" itemprop="description"><span style="display: block; float:left;">{{ education.degree }}</span><span style="display: block; float:right;">{{ education.year }}</span></h4>
-          <h5 class="resume-item-details" itemprop="description">{{ education.awards }}</h5>
+      	  <h5 class="resume-item-details" itemprop="description">{{ education.awards }}</h5>
           <p class="resume-item-copy">{{ education.summary }}</p>
+   	  <br>
         </div>
         {% endfor %}
       </section>
@@ -92,11 +92,14 @@
           <h2>{{site.projects[page.language]}}</h2>
         </header>
 
-        {% for project in site.data.projects %}
+        {% for project in projects %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ project.project }}</h3>
           <h4 class="resume-item-details" itemprop="description"><span style="display: block; float:left;">{{ project.role }}</span><span style="display: block; float:right;">{{ project.duration }}</span></h4><br/>
           <p class="resume-item-copy" style="clear: both;">{{ project.description }}</p>
+	  {% if project.link != nul %}
+	    <p><a href={{ project.link }}>Ver projeto</a></p>
+ 	  {% endif %}
         </div>
         {% endfor %}
 
@@ -111,13 +114,13 @@
         <header class="section-header">
           <h2>{{site.skills[page.language]}}</h2>
         </header>
-        {% for skill in site.data.skills %}
         <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.description }}</p>
+	  {% for skill in site.data.skills reversed %}
+	    {% for item in skill.skill %}
+		<span class="badge">{{item}}</span>
+            {% endfor %}
+          {% endfor %}
         </div>
-        {% endfor %}
-
       </section>
       <!-- end Skills -->
       {% endif %}
@@ -130,49 +133,32 @@
           <h2>{{site.certifications[page.language]}}</h2>
         </header>
 
-        {% for recognition in site.data.recognitions %}
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-          <h4 class="resume-item-details">{{ recognition.organisation }} &bull; {{ recognition.year }}</h4>
-          <p class="resume-item-copy">{{ recognition.summary }}</p>
+        <div class="resume-item certifications">
+          <p class="resume-item-copy">
+	    <a href="http://www.zend.com/en/yellow-pages#show-ClientCandidateID=ZEND024533">
+              <img src="/images/logo_zend_certified.png" alt="ZCPE certification">
+	    </a>
+	    <a href="https://www.scrumalliance.org/community/profile/bborgesdas">
+	      <img src="/images/csm-badge.png" alt="Scrum master certification">
+   	    </a>
+	  </p>
         </div>
-        {% endfor %}
 
       </section>
       <!-- end Recognition -->
-      {% endif %}
-
-      {% if site.resume_section_associations %}
-      <!-- begin Associations -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Associations</h2>
-        </header>
-
-        {% for association in site.data.associations %}
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://beerfortheworld.com">{{ association.organisation }}</a></h3>
-          <h4 class="resume-item-details">{{ association.role }} &bull; {{ association.year }}</h4>
-          <p class="resume-item-copy">{{ association.summary }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Associations -->
-      {% endif %}
+      {% endif %} 
 
       {% if site.resume_section_links %}
       <!-- begin Links -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Additional Links</h2>
+          <h2>{{site.articles[page.language]}}</h2>
         </header>
 
         <div class="resume-item">
           <ul class="resume-item-list">
-            {% for link in site.data.links %}
+            {% for link in links %}
             <li><a href={{ link.url }}>{{ link.description }}</a></li>
             {% endfor %}
           </ul>
@@ -200,7 +186,6 @@
 
       <footer class="page-footer">
         <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
       </footer>
 
     </div>

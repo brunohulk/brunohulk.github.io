@@ -1,12 +1,21 @@
 # Projects
 # donutfinder.io
-- project: donutfinder.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  description: Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.
+- project: WaakaBot
+  role: Creator
+  duration: 2016 &mdash; Present
+  description: "A telegram bot written in NodeJS and MongoDB that alerts about any
+problems in the train and subway system in the São Paulo City,"
+  link: https://storebot.me/bot/waakabot
 
 #Springfield Donut Eater's User Group
-- project: Springfield Donut Eater's User Group
-  role: Co-Founder & Organizer
+- project: WordPress Core and translator contributor
+  role: Contributor
   duration: 2007 &mdash; Present
-  description: DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.
+  description: "Core and translator contributor for WordPress 4.5 and 4.6, mainly with unit tests"
+  link: https://profiles.wordpress.org/borgesbruno
+
+- project: Computer teacher volunteer
+  role: Teacher
+  duration: 2014 &mdash; Present
+  description: Volunteer in the Calebe group focusing on elderly people.
+  link: null
