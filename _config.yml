@@ -1,8 +1,7 @@
 # Site settings
-title: "Jekyll Resume Template"
-#description: "A resume template for Jekyll and GitHub Pages sites."
+title: "Bruno Borges - Software developer"
+description: "Currículo Pessoal: Bruno Borges, Desenvolvedor Web, ZCPE e CSM, técnico em redes pelo SENAI, bacharel em Ciências da Computação pelo UNASP e pós-graduado em Engenharia Web pelo SENAC. WordPress Core Contributor"
 language: en
-
 
 #language
 description_profile:
@@ -12,12 +11,23 @@ description:
   en: Bruno Borges, PHP Developer, ZCPE e CSM
   pt: Bruno Borges, Desenvolvedor PHP, ZCPE e CSM
 
+thanks:
+  en: Powered by Jekyll, special thanks to 
+  pt: Powered by Jekyll, agradecimento especial a 
+
+library:
+  en: Library
+  pt: Livraria
+
 download_cv:
   en: Resume in PDF
   pt: Currículo em PDF
 link_cv:
   en: https://drive.google.com/file/d/0B1OxzzhipoDgWHdJM0dwdmo3cGs/view
   pt: https://drive.google.com/file/d/0B1OxzzhipoDgbGZ0SFN3TXlGYU0/view
+see_project:
+  en: See project
+  pt: Ver projeto
 
 resume_title:
   en: Software Developer
@@ -30,7 +40,7 @@ education:
   pt: Educação
 skills:
   en: Skills
-  en: Conhecimentos
+  pt: Conhecimentos
 certifications:
   en: Certifications
   pt: Certificações
@@ -77,13 +87,13 @@ resume_section_associations:    true
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://github.com/jglovier/resume-template"
-  resume_twitter_url:           "http://twitter.com/jglovier"
-  resume_dribbble_url:          "https://dribbble.com/jag"
-  # resume_facebook_url:          "insert Facebook URL here"
-  resume_linkedin_url:          "https://www.linkedin.com/in/joelglovier"
+  resume_github_url:            "https://github.com/brunohulk/"
+  resume_twitter_url:           "https://twitter.com/borgesbrunno"
+  #resume_dribbble_url:          "https://dribbble.com/jag"
+  resume_facebook_url:          "https://www.facebook.com/brunoborges1"
+  resume_linkedin_url:          "https://www.linkedin.com/in/perfilbrunoborges"
   # resume_instagram_url:         "insert your Instagram URL here"
-  resume_website_url:           "http://joelglovier.com"
+  resume_website_url:           "http://brunoborges.info"
 resume_print_social_links:      true
 
 # Design settings

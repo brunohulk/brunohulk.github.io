@@ -4,10 +4,25 @@
   {% include head.html %}
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+        {% if page.language == 'en' %}
+	   {% assign jobs = site.data.en.experience %}
+           {% assign educations = site.data.en.education %}
+           {% assign projects = site.data.en.projects %}
+  	   {% assign articles = site.data.en.articles %}
+	   {% assign links = site.data.en.links %}           
+	   {% assign lang = 'en' %}
+	{% else %}
+	   {% assign jobs = site.data.pt.experience %}      
+           {% assign educations = site.data.pt.education %}
+           {% assign projects = site.data.pt.projects %}
+  	   {% assign articles = site.data.pt.articles %}
+	   {% assign links = site.data.pt.links %}
+	   {% assign lang = 'pt' %}
+	{% endif %}
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
       <header class="page-header">
-
+	<div style="float:right" class="lang"><a href="/en">ENGLISH</a>|<a href="/pt">PORTUGUÊS</a></div><br>
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
         <img src="/images/bruno.jpg" alt="my photo" class="avatar no-print" itemprop="image">
@@ -24,14 +39,14 @@
         <div class="title-bar no-print">
 
           <!-- Your title is also defined in the _config.yml file -->
-          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title[page.language] }}</h2>
+          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title[lang] }}</h2>
 
           <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
           {% include icon-links.html %}
         </div>
 
         <div class="executive-summary no-print" itemprop="description">
-          {{site.description_profile[page.language]}}
+          {{site.description_profile[lang]}}
 	</div>
         <a href="{{site.link_cv[page.language]}}" class="contact-button no-print" itemprop="email">
   	  {{ site.download_cv[page.language] }}
@@ -42,15 +57,8 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>{{site.experience[page.language]}}</h2>
+          <h2>{{site.experience[lang]}}</h2>
         </header>
-	{% if page.language == 'en' %}
-	   {% assign jobs = site.data.en.experience %}
-           {% assign educations = site.data.en.education %}
-           {% assign projects = site.data.en.projects %}
-  	   {% assign articles = site.data.en.articles %}
-	   {% assign links = site.data.en.links %}
-	{% endif %}
         {% for job in jobs %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
@@ -68,7 +76,7 @@
       <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
-          <h2>{{site.education[page.language]}}</h2>
+          <h2>{{site.education[lang]}}</h2>
         </header>
 
         {% for education in educations %}
@@ -89,7 +97,7 @@
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h2>{{site.projects[page.language]}}</h2>
+          <h2>{{site.projects[lang]}}</h2>
         </header>
 
         {% for project in projects %}
@@ -98,7 +106,7 @@
           <h4 class="resume-item-details" itemprop="description"><span style="display: block; float:left;">{{ project.role }}</span><span style="display: block; float:right;">{{ project.duration }}</span></h4><br/>
           <p class="resume-item-copy" style="clear: both;">{{ project.description }}</p>
 	  {% if project.link != nul %}
-	    <p><a href={{ project.link }}>Ver projeto</a></p>
+	    <p><a href={{ project.link }}>{{site.see_project[page.language]}}</a></p>
  	  {% endif %}
         </div>
         {% endfor %}
@@ -112,7 +120,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>{{site.skills[page.language]}}</h2>
+          <h2>{{site.skills[lang]}}</h2>
         </header>
         <div class="resume-item">
 	  {% for skill in site.data.skills reversed %}
@@ -127,10 +135,10 @@
 
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
-      <section class="content-section">
+      <section class="content-section" id="library">
 
         <header class="section-header">
-          <h2>{{site.certifications[page.language]}}</h2>
+          <h2>{{site.certifications[lang]}}</h2>
         </header>
 
         <div class="resume-item certifications">
@@ -147,13 +155,57 @@
       </section>
       <!-- end Recognition -->
       {% endif %} 
+      <section class="content-section">
+	<header class="section-header">
+          <h2>{{site.library[lang]}}</h2>
+        </header>
+	      <style type="text/css" media="screen">
+        .gr_grid_container {
+          /* customize grid container div here. eg: width: 500px; */
+        }
+
+        .gr_grid_book_container {
+          /* customize book cover container div here */
+          float: left;
+          width: 39px;
+          height: 60px;
+          padding: 0px 0px;
+          overflow: hidden;
+        }
+      </style>
+      <div id="gr_grid_widget_1497223620">
+        <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
+            <h2>
+      <a style="text-decoration: none;" href="https://www.goodreads.com/review/list/26255680-bruno-borges?shelf=read&utm_medium=api&utm_source=grid_widget">Bruno's books</a>
+    </h2>
+  <div class="gr_grid_container">
+    <div class="gr_grid_book_container"><a title="Mere Christianity" href="https://www.goodreads.com/book/show/11138.Mere_Christianity"><img alt="Mere Christianity" border="0" src="https://images.gr-assets.com/books/1468102872s/11138.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Who Moved My Cheese?" href="https://www.goodreads.com/book/show/4894.Who_Moved_My_Cheese_"><img alt="Who Moved My Cheese?" border="0" src="https://images.gr-assets.com/books/1388639717s/4894.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="I Can't Accept Not Trying: Michael Jordan on the Pursuit of Excellence" href="https://www.goodreads.com/book/show/165580.I_Can_t_Accept_Not_Trying"><img alt="I Can't Accept Not Trying: Michael Jordan on the Pursuit of Excellence" border="0" src="https://images.gr-assets.com/books/1387739764s/165580.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Alex Ferguson: My Autobiography" href="https://www.goodreads.com/book/show/18588024-alex-ferguson"><img alt="Alex Ferguson: My Autobiography" border="0" src="https://images.gr-assets.com/books/1380212081s/18588024.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Playing the Enemy: Nelson Mandela and the Game That Made a Nation" href="https://www.goodreads.com/book/show/5984080-playing-the-enemy"><img alt="Playing the Enemy: Nelson Mandela and the Game That Made a Nation" border="0" src="https://images.gr-assets.com/books/1348391251s/5984080.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Soccer Against the Enemy: How the World's Most Popular Sport Starts and Fuels Revolutions and Keeps Dictators in Power" href="https://www.goodreads.com/book/show/101905.Soccer_Against_the_Enemy"><img alt="Soccer Against the Enemy: How the World's Most Popular Sport Starts and Fuels Revolutions and Keeps Dictators in Power" border="0" src="https://images.gr-assets.com/books/1171482678s/101905.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="O Pequeno Príncipe" href="https://www.goodreads.com/book/show/2595026-o-pequeno-pr-ncipe"><img alt="O Pequeno Príncipe" border="0" src="https://images.gr-assets.com/books/1310603424s/2595026.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Frankenstein" href="https://www.goodreads.com/book/show/2273209.Frankenstein"><img alt="Frankenstein" border="0" src="https://images.gr-assets.com/books/1348798749s/2273209.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Casamento Blindado" href="https://www.goodreads.com/book/show/16106856-casamento-blindado"><img alt="Casamento Blindado" border="0" src="https://images.gr-assets.com/books/1447553247s/16106856.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="The Pragmatic Programmer: From Journeyman to Master" href="https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer"><img alt="The Pragmatic Programmer: From Journeyman to Master" border="0" src="https://images.gr-assets.com/books/1401432508s/4099.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Introducing Go: Build Reliable, Scalable Programs" href="https://www.goodreads.com/book/show/27015358-introducing-go"><img alt="Introducing Go: Build Reliable, Scalable Programs" border="0" src="https://images.gr-assets.com/books/1452460511s/27015358.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Modern PHP: New Features and Good Practices" href="https://www.goodreads.com/book/show/22800556-modern-php"><img alt="Modern PHP: New Features and Good Practices" border="0" src="https://images.gr-assets.com/books/1422810997s/22800556.jpg" /></a></div>
+    <div class="gr_grid_book_container"><a title="Clean Code: A Handbook of Agile Software Craftsmanship" href="https://www.goodreads.com/book/show/3735293-clean-code"><img alt="Clean Code: A Handbook of Agile Software Craftsmanship" border="0" src="https://images.gr-assets.com/books/1436202607s/3735293.jpg" /></a></div>
+    <br style="clear: both"/><br/><a class="gr_grid_branding" style="font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both" href="https://www.goodreads.com/user/show/26255680-bruno-borges">Bruno Borges's favorite books »</a>
+  <noscript><br/>Share <a href="/">book reviews</a> and ratings with Bruno, and even join a <a href="/group">book club</a> on Goodreads.</noscript>
+  </div>
+      </div>
+      <script src="https://www.goodreads.com/review/grid_widget/26255680?cover_size=small&hide_link=&hide_title=&num_books=20&order=a&shelf=read&sort=date_added&widget_id=1497223620" type="text/javascript" charset="utf-8"></script>
+      </section>
+
 
       {% if site.resume_section_links %}
       <!-- begin Links -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>{{site.articles[page.language]}}</h2>
+          <h2>{{site.articles[lang]}}</h2>
         </header>
 
         <div class="resume-item">
@@ -185,7 +237,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
+        <p class="footer-line">{{site.thanks[lang]}}<a href="http://twitter.com/jglovier"> @jglovier</a>.<a href="https://github.com/jglovier/resume-template">Resume template</a>.</p>
       </footer>
 
     </div>

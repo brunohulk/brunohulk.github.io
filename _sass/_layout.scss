@@ -11,6 +11,18 @@
   @include clearfix;
 }
 
+#gr_grid_widget_1497223620 a{
+  color: black;
+}
+
+.lang a{
+  color: black;
+  text-decoration: none;
+}
+
+.lang a:hover {
+  text-decoration: underline;
+}
 
 .certifications a:link, .certifications a:visited, .certifications a:hover, .certifications a:active{
     border: 0px !important;

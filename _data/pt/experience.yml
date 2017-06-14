@@ -1,0 +1,31 @@
+# Jobs
+- company: Arizona - Making Marketing Flow
+  position: Desenvolvedor PHP Sênior
+  duration: Maio, 2017 &mdash; Presente
+  summmary: 
+
+- company: R7 - RecordTV
+  position: Desenvolvedor de sistemas
+  duration: Dez, 2015 &mdash; Apr, 2017
+  summary: Desenvolvimento e manutenção de sistemas, blogs e aplicações do portal R7 e da Rede Record, tanto das rotinas de backend como frontend. Manutenção dos ambientes de blogs e sites, aĺém do desenvolvimento de plugins para WordPress. Manutenção de sistemas legados PHP, NodeJs e Ruby Desenvolvimento e manutenção de aplicações PHP, Ruby, Sinatra e Rails do portal R7
+
+- company: Easy Taxi
+  position: Programador PHP Pleno
+  duration: Nov, 2014 &mdash; Dez, 2015
+  summary: "Desenvolvimento e manutenção de aplicações de uso interno como o sistema de Backoffice e externo WebApp, API, promoções como a integração com o programa Multiplus Fidelidade, Ambev, Outlook e TripAdvisor
+Tecnologias: PHP, Node.js, frameworks (Symfony, Silex, Phalcon e Express), banco de dados (Mysql, MongoDB e Redis), TDD(PHPUnit), BDD(Behat), Scrum, Kanban e versionamento GIT."
+
+- company: BRConnection
+  position: Programador PHP Junior/Pleno
+  duration: Set, 2008 &mdash; Nov, 2014
+  summary: "Desenvolvedor e mantenedor da solução opensource de webmail Emexis-webmail desenvolvimento do front-end (Javascript, HTML 5, CSS, Bootstrap e Jquery) do OMNE 2.7, relatórios em PDF usando a FPDF e gráficos com a Pchart e rotinas de back-end (PERL e PostgreSQL) das informações do dashboard de servidores. Desenvolvimento de uma solução de Groupware (Drive, calendário, contatos e Email) através do protocolo Webdav/Caldav. Ferramentas: PHP 5. Bootstrap, PERL, Javascript, JSON, Jquery, Ajax, PostgreSQL, CSS, HTML e SVN." 
+
+- company: Testmat
+  position: Estagiário de programação e TI
+  duration: Abr, 2007 &mdash; Set, 2008
+  summary: Manutenção de todos os sites da empresa, gerenciamento do e-learning (Moodle) e reestruturação, admnistração da rede das sedes e criação do novo portal em Plone/Zope com a linguagem Python.
+
+- company: Microlins
+  position: Professor de informática
+  duration: Mar, 2006 &mdash; Abr, 2007
+  summary: Instrutor do pacote Microsoft Office, Windows, internet e digitação
