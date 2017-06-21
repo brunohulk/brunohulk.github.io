@@ -23,8 +23,8 @@ download_cv:
   en: Resume in PDF
   pt: Currículo em PDF
 link_cv:
-  en: https://drive.google.com/file/d/0B1OxzzhipoDgWHdJM0dwdmo3cGs/view
-  pt: https://drive.google.com/file/d/0B1OxzzhipoDgbGZ0SFN3TXlGYU0/view
+  en: https://drive.google.com/open?id=0B1OxzzhipoDgYkdFbGV5QWV2TUE
+  pt: https://drive.google.com/file/d/0B1OxzzhipoDgUWVDUUVkdGhLcnc/view
 see_project:
   en: See project
   pt: Ver projeto
@@ -50,6 +50,9 @@ projects:
 articles:
   en: My articles
   pt: Meus artigos
+link_to:
+  en: Visit the blog
+  pt: Link para o blog
 
 permalink: pretty
 
