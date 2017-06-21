@@ -22,6 +22,7 @@
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
       <header class="page-header">
+	<!--<div style="float:left" class="lang"><a href="http://blog.brunoborges.info">{{site.link_to[lang]}}</a></div>-->
 	<div style="float:right" class="lang"><a href="/en">ENGLISH</a>|<a href="/pt">PORTUGUÊS</a></div><br>
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
@@ -43,8 +44,8 @@
         <div class="executive-summary no-print" itemprop="description">
           {{site.description_profile[lang]}}
 	</div>
-        <a href="{{site.link_cv[page.language]}}" class="contact-button no-print" itemprop="email">
-  	  {{ site.download_cv[page.language] }}
+        <a href="{{site.link_cv[lang]}}" class="contact-button no-print" itemprop="email">
+  	  {{ site.download_cv[lang] }}
 	</a>
       </header>
       {% if site.resume_section_experience %}
