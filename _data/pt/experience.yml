@@ -2,7 +2,9 @@
 - company: Arizona - Making Marketing Flow
   position: Desenvolvedor PHP Sênior
   duration: Maio, 2017 &mdash; Presente
-  summmary: 
+  summary: "Como desenvolvedor sênior sou responsável pela manutenção e desenvolvimento de novas funcionalidades para a plataforma Retail-PIP que mantém e ajuda os times de produção e marketing de nossos clientes; além disso faço parte do time que mantém todos os outros projetos legados em PHP funcionando e atuando como bug fixer.
+O atual projecto que estou envolvido é o desenvolvimento da nova versão da plaforma Flow. Um dos principais produtos da emrpesa que tem como objetivo armazenar e gerenciar todos os ativos, imagens, documentos dos nossos clientes.
+Tecnologias: Linux, PHP 7, OO, frameworks (Yii, Symfony e Silex), JWT, APIs, HTML, CSS, Javascript, databases (Mysql e MongoDB), plataforma Nuxeo, TDD, functional and unit test (PHPUnit), ESB (Ws02), RabbitMq, Jenkins with pipeline flow, Docker and Vagrant" 
 
 - company: R7 - RecordTV
   position: Desenvolvedor de sistemas
