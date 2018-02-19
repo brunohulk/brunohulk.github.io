@@ -2,7 +2,7 @@
 - company: Arizona - Making Marketing Flow
   position: Senior PHP Developer
   duration: May, 2017 &mdash; Present
-  summary: "As a Senior developer I'm responsible for maintenance and development of new features to the platform known as Retail-PIP that gives support for the production and marketing of our customers; beyond that, I'm also part of the team that keep the others legacy projects built in PHP healthy and running. The current project that I'm involved in the construction of the new version of the Flow. This software is one of the main products of the company which has the objective to store and manage effectively all products, assets and documents of our clients.
+  summary: "As a Senior developer I'm responsible for maintenance and development of new features to the platform known as Retail-PIP that gives support for the production and marketing of our customers; beyond that, I'm also part of the team that keep the others legacy projects built in PHP healthy and running. The current project that I'm involved in is the construction of the new version of the Flow. This software is one of the main products of the company which has the objective to store and manage effectively all products, assets and documents of our clients.
 Technologies: Linux, PHP 7, OO, frameworks (Yii, Symfony and Silex), Soap, Json, JWT, APIs, HTML, CSS, Javascript, Jquery, databases (Mysql and MongoDB), TDD, functional and unit test (PHPUnit), Nuxeo platform, ESB (Ws02), RabbitMq, Jenkins with pipeline flow, Docker and Vagrant" 
 
 - company: R7 - RecordTV
