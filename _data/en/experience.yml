@@ -2,13 +2,13 @@
 - company: Arizona - Making Marketing Flow
   position: Senior PHP Developer
   duration: May, 2017 &mdash; Present
-  summary: "As a Senior developer I'm responsible for maintenance and development of new features to the platform known as Retail-PIP that gives support for the production and marketing of our customers; beyond that, I'm also part of the team that keep the others legacy projects built in PHP healthy and running. The current project that I'm involved is the construction of the new version of the Flow. This software is one of the main products of the company which has the objective to store and manage effectively all actives, products, assets and documents of our clients.
+  summary: "As a Senior developer I'm responsible for maintenance and development of new features to the platform known as Retail-PIP that gives support for the production and marketing of our customers; beyond that, I'm also part of the team that keep the others legacy projects built in PHP healthy and running. The current project that I'm involved in the construction of the new version of the Flow. This software is one of the main products of the company which has the objective to store and manage effectively all products, assets and documents of our clients.
 Technologies: Linux, PHP 7, OO, frameworks (Yii, Symfony and Silex), Soap, Json, JWT, APIs, HTML, CSS, Javascript, Jquery, databases (Mysql and MongoDB), TDD, functional and unit test (PHPUnit), Nuxeo platform, ESB (Ws02), RabbitMq, Jenkins with pipeline flow, Docker and Vagrant" 
 
 - company: R7 - RecordTV
   position: Software Developer
   duration: Dec, 2015 &mdash; Apr, 2017
-  summary: "As a generalist developer, I had to deal with different systems and languages programming, development and maintenance of blogs and applications in the R7 portal and the Rede Record TV channel applications. Regarding the PHP Team, I was also responsible for tutoring the juniors developers, interviews, help with the hiring process and suggestions for new architecture solutions mainly with the WordPress platform.
+  summary: "As a generalist developer, I had to deal with different systems and language programming, development and maintenance of blogs and applications in the R7 portal and the Rede Record TV channel applications. Regarding the PHP Team, I was also responsible for tutoring the juniors developers, help with the hiring process and suggestions for new architecture solutions mainly with the WordPress platform.
 Technologies used are: PHP, Ruby, Sinatra, Rails, WordPress, NodeJs, MySql, Mongo, Redis e etc"
 
 - company: Easy Taxi
