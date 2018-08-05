@@ -1,34 +1,40 @@
 # Jobs
-- company: Arizona - Making Marketing Flow
+- company: ABOUT YOU GmbH - Hamburg, Germany
+  position: PHP Backend Developer
+  duration: May, 2018 &mdash; Present
+  summary: "I've been working in the Cloud API team, the team develops backend services for our ABOUT YOU Cloud clients as well as internally like for our Mobile applications. This includes a high traffic real-time API, and several services constantly running in the background.
+  Technologies: PHP 7, Design Patterns, API, Lumen, Laravel, Phalcon, Redis, Elasticsearch, Mysql, Codeexception, PHP Unit, Vagrant, Docker, Graylog, New Relic and Json Schema"
+
+- company: Arizona, Making Marketing Flow - São Paulo, Brazil
   position: Senior PHP Developer
-  duration: May, 2017 &mdash; Present
+  duration: May, 2017 &mdash; Apr, 2018
   summary: "As a Senior developer I'm responsible for maintenance and development of new features to the platform known as Retail-PIP that gives support for the production and marketing of our customers; beyond that, I'm also part of the team that keep the others legacy projects built in PHP healthy and running. The current project that I'm involved in is the construction of the new version of the Flow. This software is one of the main products of the company which has the objective to store and manage effectively all products, assets and documents of our clients.
 Technologies: Linux, PHP 7, OO, frameworks (Yii, Symfony and Silex), Soap, Json, JWT, APIs, HTML, CSS, Javascript, Jquery, databases (Mysql and MongoDB), TDD, functional and unit test (PHPUnit), Nuxeo platform, ESB (Ws02), RabbitMq, Jenkins with pipeline flow, Docker and Vagrant" 
 
-- company: R7 - RecordTV
+- company: R7/RecordTV - São Paulo, Brazil
   position: Software Developer
   duration: Dec, 2015 &mdash; Apr, 2017
   summary: "As a generalist developer, I had to deal with different systems and language programming, development and maintenance of blogs and applications in the R7 portal and the Rede Record TV channel applications. Regarding the PHP Team, I was also responsible for tutoring the juniors developers, helping with the hiring process and suggestions for new architecture solutions mainly with the WordPress platform.
 Technologies used are: PHP, Ruby, Sinatra, Rails, WordPress, NodeJs, MySql, Mongo, Redis e etc"
 
-- company: Easy Taxi
+- company: Easy Taxi - São Paulo, Brazil
   position: PHP Developer
   duration: Nov, 2014 &mdash; Dec, 2015 
   summary: "Development and maintenance of internal and external applications like Backoffice system, API, WebApp and Uploader documents. I also worked with special partners and promotions like Multiplus, Ambev, TripAdvisor and Outlook.
  Technologies: PHP, Node.js, frameworks (Symfony, Silex, Phalcon and Express), databases (Mysql, MongoDB, Redis and Memcache), Amazon Web Services, TDD (PHPUnit), BDD(Behat, Jasmine), Scrum, Kanban e versionamento GIT"
 
-- company: BRConnection
+- company: BRConnection - São Paulo, Brazil
   position: PHP Developer
   duration: Set, 2008 &mdash; Nov, 2014
   summary: "Developer and maintainer of Webmail Emexis-webmail an opensource solution by Brconnection. I have developed the front-end of the Omne 2.7, PDF reports using FPDF class and PChart and some routines in the backend like informations' server (Dashboard). Development of a Groupware solution (Drive, calendar, contacts and E-mail through Webdav/Caldav protocol.
   Technologies: PHP 5, Bootstrap, PERL, Javascript, JSON, Jquery, Ajax, PostgreSQL, CSS, HTML e SVN."
 
-- company: Testmat
+- company: Testmat - São Paulo, Brazil
   position: Internship in programming and IT
   duration: Apr, 2007 &mdash; Set, 2008
   summary: Maintenance of all the company's websites, e-learning management (Moodle) and restructuring, administration of the company’s Network and creation of a new portal using Plone/Zope and Python language 
 
-- company: Microlins
+- company: Microlins - Embu das Artes, Brazil
   position: Computer teacher
   duration: Mar, 2006 &mdash; Apr, 2007
   summary: Instructor of Microsoft Office 2000 suite, Windows 2000, internet use e typing  
